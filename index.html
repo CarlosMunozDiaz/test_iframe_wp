@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+    <!-- Incluir la siguiente lógica de estilos para correcto funcionamiento de los gráficos -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,800,900&amp;display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="outer-chart">        
+        <h1 class="chart__title">Evolución de la tasa de contratación en LinkedIn por industria (2020-2021)</h1> 
+        <div class="chart">
+            <h2 class="chart__subtitle">Datos en porcentajes</h2>
+            <div class="chart__b-select">
+                <select class="chart__select" id="empleoEighteen">
+                    <option class="chart__select--item" value="null">Seleccione una industria</option>
+                    <option class="chart__select--item" value="Software_y_Servicios_IT">Software y Servicios IT</option>
+                    <option class="chart__select--item" value="Sin_fines_de_lucro">Sin fines de lucro</option>
+                    <option class="chart__select--item" value="Finanzas">Finanzas</option>
+                    <option class="chart__select--item" value="Comercio_al_menudeo">Comercio al menudeo</option>
+                    <option class="chart__select--item" value="Salud">Salud</option>
+                    <option class="chart__select--item" value="Transporte_y_Logística">Transporte y Logística</option>
+                    <option class="chart__select--item" value="Medios_y_comunicación">Medios y comunicación</option>
+                    <option class="chart__select--item" value="Bienestar_y_salud">Bienestar y salud</option>
+                    <option class="chart__select--item" value="Bienes_raíces">Bienes raíces</option>
+                    <option class="chart__select--item" value="Servicios_corporativos">Servicios corporativos</option>
+                    <option class="chart__select--item" value="Agricultura">Agricultura</option>
+                    <option class="chart__select--item" value="Construcción">Construcción</option>
+                    <option class="chart__select--item" value="Bienes_de_consumo">Bienes de consumo</option>
+                    <option class="chart__select--item" value="Hardware_y_redes">Hardware & redes</option>
+                    <option class="chart__select--item" value="Legal">Legal</option>
+                    <option class="chart__select--item" value="Manufactura">Manufactura</option>
+                    <option class="chart__select--item" value="Energía_y_minas">Energía y minas</option>
+                    <option class="chart__select--item" value="Entretenimiento">Entretenimiento</option>
+                    <option class="chart__select--item" value="Diseño">Diseño</option>
+                    <option class="chart__select--item" value="Administración_pública">Administración pública</option>
+                    <option class="chart__select--item" value="Educación">Educación</option>
+                    <option class="chart__select--item" value="Recreación_y_viajes">Recreación y viajes</option>
+                </select>
+            </div>
+            <div class="chart__legend">
+                <span class="chart__legend--item two-colors-first">Promedio general</span>
+                <span class="chart__legend--item two-colors-second">Industria seleccionada</span>
+            </div>
+            <div class="chart__viz" id="chart-eighteen">
+            </div>
+            <p class="data-source"><span class="strong">Fuente: </span>Elaboración propia usando los datos de LinkedIn a través del Data Partnership</p>
+        </div>
+    </div>
+    <!-- Incluir la siguiente lógica para el correcto funcionamiento de los gráficos -->
+    <div class="chart__tooltip" id="chartTooltip">
+        <p class="chart__tooltip--title"></p>
+        <p class="chart__tooltip--text"></p>
+    </div>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="./js/tooltip.js"></script>
+    <script src="./js/main.js?v=16092021"></script>
+</body>
+</html>
